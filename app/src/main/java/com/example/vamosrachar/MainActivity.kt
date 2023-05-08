@@ -2,7 +2,6 @@ package com.example.vamosrachar
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -30,8 +29,6 @@ class MainActivity : AppCompatActivity() {
         precoDividirEditText.setSelection(0)
         numeroPessoasEditText.setSelection(0)
 
-        precoDividirEditText.setText("0")
-        numeroPessoasEditText.setText("1")
         precoDivididoTextView.text = "0.00"
 
         val precoDivididoUpdater = PrecoDivididoUpdater(precoDividirEditText, numeroPessoasEditText, precoDivididoTextView)
@@ -43,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             textToSpeechManager.speak("O valor a ser pago por pessoa é de $precoDividido R$")
         }
 
-        shareBtn.setOnClickListener() {
+        shareBtn.setOnClickListener {
             val precoDividido = precoDivididoTextView.text.toString()
             shareManager.shareText("O valor a ser pago por pessoa é de $precoDividido R$")
         }

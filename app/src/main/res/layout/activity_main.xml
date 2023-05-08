@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="#673AB7"
     tools:context=".MainActivity">
+
     <LinearLayout
         android:layout_width="343dp"
         android:layout_height="wrap_content"
@@ -21,7 +22,8 @@
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Vamos Rachar!"
+            android:contentDescription="@string/t_tulo_principal_com_o_nome_vamos_rachar"
+            android:text="@string/vamos_rachar"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="60sp" />
@@ -41,7 +43,8 @@
                 android:id="@+id/imagePrice"
                 android:layout_width="92dp"
                 android:layout_height="92dp"
-                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:contentDescription="@string/digite_o_valor_a_ser_dividido"
                 app:srcCompat="@drawable/baseline_attach_money_24"
                 tools:srcCompat="@drawable/baseline_attach_money_24" />
 
@@ -49,12 +52,14 @@
                 android:id="@+id/precoDividir"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:autofillHints=""
                 android:ems="10"
+                android:hint="@string/_0"
                 android:inputType="number|numberDecimal"
-                android:phoneNumber="false"
-                android:text="0"
+                android:labelFor="@id/imagePrice"
                 android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 android:textSize="30sp" />
 
         </LinearLayout>
@@ -74,8 +79,9 @@
                 android:id="@+id/imagePeople"
                 android:layout_width="92dp"
                 android:layout_height="92dp"
-                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
                 android:clickable="false"
+                android:contentDescription="@string/digite_o_numero_de_pessoas_que_v_o_dividir"
                 app:srcCompat="@drawable/baseline_groups_24"
                 tools:srcCompat="@drawable/baseline_groups_24" />
 
@@ -83,10 +89,14 @@
                 android:id="@+id/numeroPessoas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:autofillHints=""
                 android:ems="10"
+                android:hint="@string/_1"
                 android:inputType="number"
+                android:labelFor="@id/imagePeople"
                 android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 android:textSize="30sp"
                 tools:text="0" />
         </LinearLayout>
@@ -106,8 +116,8 @@
                 android:id="@+id/moedaSymbol"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"
-                android:text="R$"
+                android:layout_marginEnd="16dp"
+                android:text="@string/r"
                 android:textColor="@color/white"
                 android:textSize="48sp" />
 
@@ -115,7 +125,7 @@
                 android:id="@+id/showPrecoDividido"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0,00"
+                android:text="@string/_0_00"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="48sp" />
@@ -136,8 +146,8 @@
                 android:id="@+id/ttsBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="64dp"
-                android:contentDescription="Compartilhar preço com outros aplicativos por texto."
+                android:layout_marginEnd="64dp"
+                android:contentDescription="@string/clique_aqui_para_ouvir_o_pre_o_dividido"
                 android:src="@drawable/baseline_volume_up_24"
                 app:backgroundTint="@color/white" />
 
@@ -145,7 +155,7 @@
                 android:id="@+id/shareBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="Compartilhar preco por texto com outros aplicativos."
+                android:contentDescription="@string/compartilhar_preco_por_texto_com_outros_aplicativos"
                 android:src="@drawable/baseline_share_24"
                 app:backgroundTint="@color/white" />
         </LinearLayout>
