@@ -26,11 +26,11 @@
             android:text="@string/vamos_rachar"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="60sp" />
+            android:textSize="34sp" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="31dp" />
+            android:layout_height="8dp" />
 
         <LinearLayout
             android:id="@+id/rowOne"
@@ -41,8 +41,8 @@
 
             <ImageView
                 android:id="@+id/imagePrice"
-                android:layout_width="92dp"
-                android:layout_height="92dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_marginStart="24dp"
                 android:contentDescription="@string/digite_o_valor_a_ser_dividido"
                 app:srcCompat="@drawable/baseline_attach_money_24"
@@ -50,7 +50,7 @@
 
             <EditText
                 android:id="@+id/precoDividir"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:autofillHints=""
@@ -77,8 +77,8 @@
 
             <ImageView
                 android:id="@+id/imagePeople"
-                android:layout_width="92dp"
-                android:layout_height="92dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_marginStart="24dp"
                 android:clickable="false"
                 android:contentDescription="@string/digite_o_numero_de_pessoas_que_v_o_dividir"
@@ -87,7 +87,7 @@
 
             <EditText
                 android:id="@+id/numeroPessoas"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:autofillHints=""
@@ -103,7 +103,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="31dp" />
+            android:layout_height="8dp" />
 
         <LinearLayout
             android:id="@+id/finalRow"
@@ -133,7 +133,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="31dp" />
+            android:layout_height="8dp" />
 
         <LinearLayout
             android:id="@+id/buttonRow"

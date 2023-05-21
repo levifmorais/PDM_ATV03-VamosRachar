@@ -1,15 +1,20 @@
 <resources>
-    <string name="app_name">Vamos Rachar! Acessibilidade</string>
-    <string name="t_tulo_principal_com_o_nome_vamos_rachar">Título principal com o nome Vamos Rachar!</string>
-    <string name="vamos_rachar">Vamos Rachar!</string>
-    <string name="s_mbolo_de_cifr_o">Símbolo de cifrão</string>
-    <string name="pre_o_a_ser_dividido">Preço a ser dividido</string>
-    <string name="digite_o_valor_a_ser_dividido">Digite o valor a ser dividido</string>
+    <string name="t_tulo_principal_com_o_nome_vamos_rachar">Main title with the name Let\'s Split</string>
+    <string name="vamos_rachar">Let\'s split!</string>
+    <string name="s_mbolo_de_cifr_o">Dollar Symbol</string>
+    <string name="pre_o_a_ser_dividido">Price to be split</string>
+    <string name="digite_o_valor_a_ser_dividido">Enter the value to be split</string>
     <string name="_0">0</string>
     <string name="_0_00">0,00</string>
-    <string name="r">R$</string>
-    <string name="clique_aqui_para_ouvir_o_pre_o_dividido">Ouvir o preço dividido</string>
-    <string name="compartilhar_preco_por_texto_com_outros_aplicativos">Compartilhar preco por texto com outros aplicativos.</string>
-    <string name="digite_o_numero_de_pessoas_que_v_o_dividir">Digite o numero de pessoas que vão dividir</string>
+    <string name="r">$</string>
+    <string name="clique_aqui_para_ouvir_o_pre_o_dividido">Listen to the split price</string>
+    <string name="compartilhar_preco_por_texto_com_outros_aplicativos">Share the price via text with other applications.</string>
+    <string name="digite_o_numero_de_pessoas_que_v_o_dividir">Enter the number of people to split with</string>
     <string name="_1">1</string>
+    <string name="app_name">Let\'s Split!</string>
+    <string name="shareText">Share with</string>
+    <string name="interactionMsg">"The amount to be paid per person is "</string>
+    <string name="cifrao">$</string>
+    <string name="precoLabelLand">Price to be split</string>
+    <string name="racharLandLabel">Number of people</string>
 </resources>

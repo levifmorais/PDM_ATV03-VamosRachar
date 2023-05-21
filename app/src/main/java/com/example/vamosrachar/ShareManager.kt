@@ -11,7 +11,7 @@ class ShareManager (private val context: Context) {
             type = "text/plain"
         }
 
-        val shareIntent = Intent.createChooser(sendIntent, "Compartilhar com")
+        val shareIntent = Intent.createChooser(sendIntent, context.getString(R.string.shareText))
         context.startActivity(shareIntent)
     }
 }

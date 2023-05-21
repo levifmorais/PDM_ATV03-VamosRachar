@@ -37,12 +37,12 @@ class MainActivity : AppCompatActivity() {
 
         ttsBtn.setOnClickListener {
             val precoDividido = precoDivididoTextView.text.toString()
-            textToSpeechManager.speak("O valor a ser pago por pessoa é de $precoDividido R$")
+            textToSpeechManager.speak(interactionMsg(precoDividido))
         }
 
         shareBtn.setOnClickListener {
             val precoDividido = precoDivididoTextView.text.toString()
-            shareManager.shareText("O valor a ser pago por pessoa é de $precoDividido R$")
+            shareManager.shareText(interactionMsg(precoDividido))
         }
 
     }
@@ -52,4 +52,10 @@ class MainActivity : AppCompatActivity() {
         textToSpeechManager.destroy()
     }
 
+    fun interactionMsg(precoDividido: String): String {
+        val interactionMsg = getString(R.string.interactionMsg)
+        val cifrao = getString(R.string.cifrao)
+        val fullMsg = interactionMsg + cifrao + precoDividido
+        return fullMsg
+    }
 }
